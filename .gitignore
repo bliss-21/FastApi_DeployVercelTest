@@ -1,0 +1,11 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+
+# SQLite database file
+*.db
+
+# FastAPI specific
+__pycache__/
