@@ -19,6 +19,13 @@ c.execute('''CREATE TABLE IF NOT EXISTS tasks
              (id INTEGER PRIMARY KEY, name TEXT, description TEXT)''')
 conn.commit()
 
+@app.get("/")
+async def home(task_id: int):
+
+    return {"mensaje":"hola mundo"}
+
+
+
 # Ruta para crear una nueva tarea
 @app.post("/tasks/")
 async def create_task(task: Task):
